@@ -127,99 +127,106 @@ Toggle Theme
     </section>
 
     <!-- PLACES SECTION -->
+
+
+
+
     <section>
-      <div class="flex items-center justify-between mb-6">
-        <h2 class="text-2xl md:text-3xl font-bold">📍 Favourite Places</h2>
-        <div class="flex gap-2">
-          <button class="place-prev carousel-arrow p-2 rounded-md" aria-label="Previous place">‹</button>
-          <button class="place-next carousel-arrow p-2 rounded-md" aria-label="Next place">›</button>
+  <div class="flex items-center justify-between mb-6">
+    <h2 class="text-2xl md:text-3xl font-bold text-center">📍 Favourite Places</h2>
+    <div class="flex gap-2">
+      <button class="place-prev carousel-arrow p-2 rounded-md" aria-label="Previous place">‹</button>
+      <button class="place-next carousel-arrow p-2 rounded-md" aria-label="Next place">›</button>
+    </div>
+  </div>
+
+  <div id="placesCarousel" class="relative">
+    <div class="flex gap-6 overflow-x-auto no-scrollbar snap-x snap-mandatory py-2">
+
+      <!-- CARD 1 -->
+      <article class="card min-w-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden snap-start">
+        <img class="w-full h-44 object-contain bg-white p-3 rounded-xl shadow-md transition-transform duration-300 hover:scale-105"
+             src="./utilities/tailwindImages/goa.jfif" alt="Goa">
+        <div class="p-4 text-center">
+          <h3 class="font-semibold text-lg">Goa</h3>
+          <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Sandy beaches, sunsets, seafood and relaxed coastal vibes.</p>
         </div>
-      </div>
+      </article>
 
-      <div id="placesCarousel" class="relative">
-        <div class="flex gap-6 overflow-x-auto no-scrollbar snap-x snap-mandatory py-2">
-          <article class="card min-w-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden snap-start">
-            <img class="w-full h-44 object-cover card-img" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Goa">
-            <div class="p-4 text-center">
-              <h3 class="font-semibold text-lg">Goa</h3>
-              <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Sandy beaches, sunsets, seafood and relaxed coastal vibes.</p>
-            </div>
-          </article>
-
-          <article class="card min-w-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden snap-start">
-            <img class="w-full h-44 object-cover card-img" src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=800&q=80" alt="Paris">
-            <div class="p-4 text-center">
-              <h3 class="font-semibold text-lg">Paris</h3>
-              <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Romantic streets, world-class museums and the Eiffel skyline.</p>
-            </div>
-          </article>
-
-          <article class="card min-w-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden snap-start">
-            <img class="w-full h-44 object-cover card-img" src="https://images.unsplash.com/photo-1502920917128-1aa500764b23?auto=format&fit=crop&w=800&q=80" alt="Maldives">
-            <div class="p-4 text-center">
-              <h3 class="font-semibold text-lg">Maldives</h3>
-              <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Turquoise lagoons, overwater bungalows and pure relaxation.</p>
-            </div>
-          </article>
-
-          <article class="card min-w-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden snap-start">
-            <img class="w-full h-44 object-cover card-img" src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80" alt="Manali">
-            <div class="p-4 text-center">
-              <h3 class="font-semibold text-lg">Manali</h3>
-              <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Snowy mountains, pine forests and adventurous treks.</p>
-            </div>
-          </article>
-
-          <article class="card min-w-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden snap-start">
-            <img class="w-full h-44 object-cover card-img" src="https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?auto=format&fit=crop&w=800&q=80" alt="Dubai">
-            <div class="p-4 text-center">
-              <h3 class="font-semibold text-lg">Dubai</h3>
-              <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Ultra-modern skyline, desert safaris and luxury experiences.</p>
-            </div>
-          </article>
-
-          <article class="card min-w-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden snap-start">
-            <img class="w-full h-44 object-cover card-img" src="https://images.unsplash.com/photo-1505765062363-3a2f1b1b1b1f?auto=format&fit=crop&w=800&q=80" alt="London">
-            <div class="p-4 text-center">
-              <h3 class="font-semibold text-lg">London</h3>
-              <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Historic landmarks, royal palaces and buzzing culture.</p>
-            </div>
-          </article>
-
-          <article class="card min-w-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden snap-start">
-            <img class="w-full h-44 object-cover card-img" src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c7?auto=format&fit=crop&w=800&q=80" alt="Singapore">
-            <div class="p-4 text-center">
-              <h3 class="font-semibold text-lg">Singapore</h3>
-              <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Futuristic gardens, food hawker culture and clean streets.</p>
-            </div>
-          </article>
-
-          <article class="card min-w-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden snap-start">
-            <img class="w-full h-44 object-cover card-img" src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=800&q=80" alt="New York">
-            <div class="p-4 text-center">
-              <h3 class="font-semibold text-lg">New York</h3>
-              <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">The city that never sleeps — diverse, iconic and vibrant.</p>
-            </div>
-          </article>
-
-          <article class="card min-w-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden snap-start">
-            <img class="w-full h-44 object-cover card-img" src="https://images.unsplash.com/photo-1507951543032-c6f1f7a1d1b3?auto=format&fit=crop&w=800&q=80" alt="Kashmir">
-            <div class="p-4 text-center">
-              <h3 class="font-semibold text-lg">Kashmir</h3>
-              <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Serene valleys, lakes and world-famous hospitality.</p>
-            </div>
-          </article>
-
-          <article class="card min-w-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden snap-start">
-            <img class="w-full h-44 object-cover card-img" src="https://images.unsplash.com/photo-1549893074-0c3bfc8f0a52?auto=format&fit=crop&w=800&q=80" alt="Hyderabad">
-            <div class="p-4 text-center">
-              <h3 class="font-semibold text-lg">Hyderabad</h3>
-              <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Historic Charminar, rich biryani and vibrant markets.</p>
-            </div>
-          </article>
+      <!-- CARD 2 -->
+      <article class="card min-w-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden snap-start">
+        <img class="w-full h-44 object-contain bg-white p-3 rounded-xl shadow-md transition-transform duration-300 hover:scale-105"
+             src="./utilities/tailwindImages/vijaywada.jfif" alt="Vijaywada">
+        <div class="p-4 text-center">
+          <h3 class="font-semibold text-lg">Vijaywada</h3>
+          <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Historic ghats, temples and scenic beauty.</p>
         </div>
-      </div>
-    </section>
+      </article>
+
+      <!-- CARD 3 -->
+      <article class="card min-w-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden snap-start">
+        <img class="w-full h-44 object-contain bg-white p-3 rounded-xl shadow-md transition-transform duration-300 hover:scale-105"
+             src="./utilities/tailwindImages/vikarabad.jfif" alt="Vikarabad">
+        <div class="p-4 text-center">
+          <h3 class="font-semibold text-lg">Vikarabad</h3>
+          <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Forests, lakes and peaceful scenic trails.</p>
+        </div>
+      </article>
+
+      <!-- CARD 4 -->
+      <article class="card min-w-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden snap-start">
+        <img class="w-full h-44 object-contain bg-white p-3 rounded-xl shadow-md transition-transform duration-300 hover:scale-105"
+             src="./utilities/tailwindImages/pune.jfif" alt="Pune">
+        <div class="p-4 text-center">
+          <h3 class="font-semibold text-lg">Pune</h3>
+          <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Pleasant weather, hills and youthful culture.</p>
+        </div>
+      </article>
+
+      <!-- CARD 5 -->
+      <article class="card min-w-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden snap-start">
+        <img class="w-full h-44 object-contain bg-white p-3 rounded-xl shadow-md transition-transform duration-300 hover:scale-105"
+             src="./utilities/tailwindImages/bhilai.jfif" alt="Bhilai">
+        <div class="p-4 text-center">
+          <h3 class="font-semibold text-lg">Bhilai</h3>
+          <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Peaceful city, greenery and modern vibe.</p>
+        </div>
+      </article>
+
+      <!-- CARD 6 -->
+      <article class="card min-w-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden snap-start">
+        <img class="w-full h-44 object-contain bg-white p-3 rounded-xl shadow-md transition-transform duration-300 hover:scale-105"
+             src="./utilities/tailwindImages/nanded.jfif" alt="Nanded">
+        <div class="p-4 text-center">
+          <h3 class="font-semibold text-lg">Nanded</h3>
+          <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Historic temples, forts and cultural heritage.</p>
+        </div>
+      </article>
+
+      <!-- CARD 7 -->
+      <article class="card min-w-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden snap-start">
+        <img class="w-full h-44 object-contain bg-white p-3 rounded-xl shadow-md transition-transform duration-300 hover:scale-105"
+             src="./utilities/tailwindImages/aadiyogi.jfif" alt="Aadiyogi">
+        <div class="p-4 text-center">
+          <h3 class="font-semibold text-lg">Aadiyogi</h3>
+          <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Spiritual calmness and inspirational sculpture.</p>
+        </div>
+      </article>
+
+      <!-- CARD 8 -->
+      <article class="card min-w-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden snap-start">
+        <img class="w-full h-44 object-contain bg-white p-3 rounded-xl shadow-md transition-transform duration-300 hover:scale-105"
+             src="./utilities/tailwindImages/hyderabad.jfif" alt="Hyderabad">
+        <div class="p-4 text-center">
+          <h3 class="font-semibold text-lg">Hyderabad</h3>
+          <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Charminar, biryani and vibrant culture.</p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
   </main>
   <!-- FOOTER -->
 <footer class="w-full bg-gray-800 text-white text-center py-6 mt-16">
