@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gradient Border Animation</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0a0a0a;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+}
+
+.gradient-border {
+  position: relative;
+  padding: 20px 40px;
+  font-size: 1.5rem;
+  border-radius: 12px;
+  background: #111;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.gradient-border::before {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  background: linear-gradient(270deg, 
+              #ff00ff, #00ffff, #00ff00, #ffff00, #ff0000, #ff00ff);
+  background-size: 600% 600%;
+  border-radius: 14px;
+  z-index: -1;
+  animation: borderMove 6s linear infinite;
+}
+
+/* Animation to move gradient around */
+@keyframes borderMove {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+  </style>
+</head>
+
+<body>
+  <div class="gradient-border">
+    Hello Ganti Vinay Kumar
+  </div>
+</body>
+</html>

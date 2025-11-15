@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Favorites — Movies & Places</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="/utilities/tailwindStyles.css">
+</head>
+<body class="bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100">
+
+ 
+
+ 
+  <div class="fixed top-4 right-4 z-50 flex items-center gap-3">
+    <button id="toggleTheme" class="px-3 py-2 rounded-md bg-white/90 dark:bg-gray-800/80 text-sm shadow">Toggle Theme</button>
+  </div>
+ <nav class="fixed top-0 left-0 w-full bg-white/70 dark:bg-gray-800/60 backdrop-blur-md shadow z-50 py-3 flex justify-end px-6">
+<button id="toggleTheme" class="px-3 py-2 rounded-md bg-gray-200 dark:bg-gray-700 text-sm font-medium shadow">
+Toggle Theme
+</button>
+</nav>
+  <header class="h-screen flex items-center justify-center bg-gradient-to-br from-indigo-600 to-rose-500 dark:from-gray-800 dark:to-gray-900">
+    <div class="text-center px-6">
+      <h1 class="text-4xl md:text-6xl font-extrabold text-white drop-shadow-lg">Welcome — My Favorite Movies & Places</h1>
+      <p class="mt-4 text-lg text-white/90">Browse my top picks. Carousels auto-play — hover to pause.</p>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto px-4 md:px-8 py-12 space-y-20">
+
+    <!-- MOVIES SECTION -->
+    <section>
+      <div class="flex items-center justify-between mb-6">
+        <h2 class="text-2xl md:text-3xl font-bold">🎬 Favourite Movies</h2>
+        <div class="flex gap-2">
+          <button class="movie-prev carousel-arrow p-2 rounded-md" aria-label="Previous movie">‹</button>
+          <button class="movie-next carousel-arrow p-2 rounded-md" aria-label="Next movie">›</button>
+        </div>
+      </div>
+
+      <div id="moviesCarousel" class="relative">
+        <div class="flex gap-6 overflow-x-auto no-scrollbar snap-x snap-mandatory py-2"
+             style="scroll-behavior:smooth;">
+          <!-- Card template: min-w tuned to show approx 4 on large screens -->
+          <article class="card min-w-[220px] md:min-w-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden snap-start">
+            <img class="w-full h-40 object-cover card-img" src="https://images.unsplash.com/photo-1502139214988-8d06f3a2e7ce?auto=format&fit=crop&w=800&q=80" alt="Inception poster">
+            <div class="p-4 text-center">
+              <h3 class="font-semibold text-lg">Inception</h3>
+              <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">A Nolan masterpiece about dreams within dreams.</p>
+            </div>
+          </article>
+
+          <article class="card min-w-[220px] md:min-w-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden snap-start">
+            <img class="w-full h-40 object-cover card-img" src="https://images.unsplash.com/photo-1502209524169-acea936ff3a2?auto=format&fit=crop&w=800&q=80" alt="Interstellar poster">
+            <div class="p-4 text-center">
+              <h3 class="font-semibold text-lg">Interstellar</h3>
+              <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Epic space drama exploring time, love and survival.</p>
+            </div>
+          </article>
+
+          <article class="card min-w-[220px] md:min-w-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden snap-start">
+            <img class="w-full h-40 object-cover card-img" src="https://images.unsplash.com/photo-1563201519-2b8c9f7f6b02?auto=format&fit=crop&w=800&q=80" alt="Dark Knight poster">
+            <div class="p-4 text-center">
+              <h3 class="font-semibold text-lg">The Dark Knight</h3>
+              <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">A gritty and brilliant superhero crime drama.</p>
+            </div>
+          </article>
+
+          <article class="card min-w-[220px] md:min-w-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden snap-start">
+            <img class="w-full h-40 object-cover card-img" src="https://images.unsplash.com/photo-1581905764498-2d7b1b4a0b7b?auto=format&fit=crop&w=800&q=80" alt="Avatar poster">
+            <div class="p-4 text-center">
+              <h3 class="font-semibold text-lg">Avatar</h3>
+              <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">A spectacular visual journey on Pandora.</p>
+            </div>
+          </article>
+
+          <article class="card min-w-[220px] md:min-w-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden snap-start">
+            <img class="w-full h-40 object-cover card-img" src="https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?auto=format&fit=crop&w=800&q=80" alt="Titanic poster">
+            <div class="p-4 text-center">
+              <h3 class="font-semibold text-lg">Titanic</h3>
+              <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">A timeless romantic epic on the doomed ship.</p>
+            </div>
+          </article>
+
+          <article class="card min-w-[220px] md:min-w-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden snap-start">
+            <img class="w-full h-40 object-cover card-img" src="https://images.unsplash.com/photo-1538701566285-8b57a7a3f3b5?auto=format&fit=crop&w=800&q=80" alt="Avengers Endgame poster">
+            <div class="p-4 text-center">
+              <h3 class="font-semibold text-lg">Avengers: Endgame</h3>
+              <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">The MCU's epic showdown and emotional finale.</p>
+            </div>
+          </article>
+
+          <article class="card min-w-[220px] md:min-w-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden snap-start">
+            <img class="w-full h-40 object-cover card-img" src="https://images.unsplash.com/photo-1542206395-9feb3edaa68b?auto=format&fit=crop&w=800&q=80" alt="Iron Man poster">
+            <div class="p-4 text-center">
+              <h3 class="font-semibold text-lg">Iron Man</h3>
+              <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">The film that launched the modern MCU.</p>
+            </div>
+          </article>
+
+          <article class="card min-w-[220px] md:min-w-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden snap-start">
+            <img class="w-full h-40 object-cover card-img" src="https://images.unsplash.com/photo-1524985069026-dd778a71c7b4?auto=format&fit=crop&w=800&q=80" alt="Matrix poster">
+            <div class="p-4 text-center">
+              <h3 class="font-semibold text-lg">The Matrix</h3>
+              <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">A mind-bending cyberpunk classic.</p>
+            </div>
+          </article>
+
+          <article class="card min-w-[220px] md:min-w-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden snap-start">
+            <img class="w-full h-40 object-cover card-img" src="https://images.unsplash.com/photo-1542206395-60db0b9b1d59?auto=format&fit=crop&w=800&q=80" alt="Joker poster">
+            <div class="p-4 text-center">
+              <h3 class="font-semibold text-lg">Joker</h3>
+              <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">A haunting character study and award-winning performance.</p>
+            </div>
+          </article>
+
+          <article class="card min-w-[220px] md:min-w-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden snap-start">
+            <img class="w-full h-40 object-cover card-img" src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=800&q=80" alt="John Wick poster">
+            <div class="p-4 text-center">
+              <h3 class="font-semibold text-lg">John Wick</h3>
+              <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Stylish action with revolutionary choreography.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PLACES SECTION -->
+    <section>
+      <div class="flex items-center justify-between mb-6">
+        <h2 class="text-2xl md:text-3xl font-bold">📍 Favourite Places</h2>
+        <div class="flex gap-2">
+          <button class="place-prev carousel-arrow p-2 rounded-md" aria-label="Previous place">‹</button>
+          <button class="place-next carousel-arrow p-2 rounded-md" aria-label="Next place">›</button>
+        </div>
+      </div>
+
+      <div id="placesCarousel" class="relative">
+        <div class="flex gap-6 overflow-x-auto no-scrollbar snap-x snap-mandatory py-2">
+          <article class="card min-w-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden snap-start">
+            <img class="w-full h-44 object-cover card-img" src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=800&q=80" alt="Goa">
+            <div class="p-4 text-center">
+              <h3 class="font-semibold text-lg">Goa</h3>
+              <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Sandy beaches, sunsets, seafood and relaxed coastal vibes.</p>
+            </div>
+          </article>
+
+          <article class="card min-w-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden snap-start">
+            <img class="w-full h-44 object-cover card-img" src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=800&q=80" alt="Paris">
+            <div class="p-4 text-center">
+              <h3 class="font-semibold text-lg">Paris</h3>
+              <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Romantic streets, world-class museums and the Eiffel skyline.</p>
+            </div>
+          </article>
+
+          <article class="card min-w-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden snap-start">
+            <img class="w-full h-44 object-cover card-img" src="https://images.unsplash.com/photo-1502920917128-1aa500764b23?auto=format&fit=crop&w=800&q=80" alt="Maldives">
+            <div class="p-4 text-center">
+              <h3 class="font-semibold text-lg">Maldives</h3>
+              <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Turquoise lagoons, overwater bungalows and pure relaxation.</p>
+            </div>
+          </article>
+
+          <article class="card min-w-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden snap-start">
+            <img class="w-full h-44 object-cover card-img" src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80" alt="Manali">
+            <div class="p-4 text-center">
+              <h3 class="font-semibold text-lg">Manali</h3>
+              <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Snowy mountains, pine forests and adventurous treks.</p>
+            </div>
+          </article>
+
+          <article class="card min-w-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden snap-start">
+            <img class="w-full h-44 object-cover card-img" src="https://images.unsplash.com/photo-1496307042754-b4aa456c4a2d?auto=format&fit=crop&w=800&q=80" alt="Dubai">
+            <div class="p-4 text-center">
+              <h3 class="font-semibold text-lg">Dubai</h3>
+              <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Ultra-modern skyline, desert safaris and luxury experiences.</p>
+            </div>
+          </article>
+
+          <article class="card min-w-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden snap-start">
+            <img class="w-full h-44 object-cover card-img" src="https://images.unsplash.com/photo-1505765062363-3a2f1b1b1b1f?auto=format&fit=crop&w=800&q=80" alt="London">
+            <div class="p-4 text-center">
+              <h3 class="font-semibold text-lg">London</h3>
+              <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Historic landmarks, royal palaces and buzzing culture.</p>
+            </div>
+          </article>
+
+          <article class="card min-w-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden snap-start">
+            <img class="w-full h-44 object-cover card-img" src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c7?auto=format&fit=crop&w=800&q=80" alt="Singapore">
+            <div class="p-4 text-center">
+              <h3 class="font-semibold text-lg">Singapore</h3>
+              <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Futuristic gardens, food hawker culture and clean streets.</p>
+            </div>
+          </article>
+
+          <article class="card min-w-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden snap-start">
+            <img class="w-full h-44 object-cover card-img" src="https://images.unsplash.com/photo-1467269204594-9661b134dd2b?auto=format&fit=crop&w=800&q=80" alt="New York">
+            <div class="p-4 text-center">
+              <h3 class="font-semibold text-lg">New York</h3>
+              <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">The city that never sleeps — diverse, iconic and vibrant.</p>
+            </div>
+          </article>
+
+          <article class="card min-w-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden snap-start">
+            <img class="w-full h-44 object-cover card-img" src="https://images.unsplash.com/photo-1507951543032-c6f1f7a1d1b3?auto=format&fit=crop&w=800&q=80" alt="Kashmir">
+            <div class="p-4 text-center">
+              <h3 class="font-semibold text-lg">Kashmir</h3>
+              <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Serene valleys, lakes and world-famous hospitality.</p>
+            </div>
+          </article>
+
+          <article class="card min-w-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden snap-start">
+            <img class="w-full h-44 object-cover card-img" src="https://images.unsplash.com/photo-1549893074-0c3bfc8f0a52?auto=format&fit=crop&w=800&q=80" alt="Hyderabad">
+            <div class="p-4 text-center">
+              <h3 class="font-semibold text-lg">Hyderabad</h3>
+              <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Historic Charminar, rich biryani and vibrant markets.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+  <!-- FOOTER -->
+<footer class="w-full bg-gray-800 text-white text-center py-6 mt-16">
+<p class="text-lg">&copy; 2025 My Portfolio. All Rights Reserved.</p>
+</footer>
+
+
+  <!-- SMALL JS: carousels auto-scroll + controls + theme toggle -->
+ <script src="/utilities/tailwindScript.js"></script>
+</body>
+</html>

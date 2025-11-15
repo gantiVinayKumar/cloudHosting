@@ -1,0 +1,46 @@
+
+    /* small custom styles */
+    .card-img { transition: transform .35s ease; }
+    .card:hover .card-img { transform: scale(1.06); }
+    /* hide scroll bar but keep scrolling */
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    /* make arrows semi-transparent */
+    .carousel-arrow { background: rgba(0,0,0,0.45); color: white; }
+    .carousel-arrow.dark { background: rgba(255,255,255,0.12); color: white; };
+
+.object-cover{
+   border-radius: 10px!important;
+     padding: 10px!important;
+}
+img{
+    border-radius: 20px!important;
+     padding: 10px!important;
+}
+    
+        /* Hide scrollbar but allow scrolling */
+        .no-scrollbar::-webkit-scrollbar {
+        display: none;
+        }
+        .no-scrollbar {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+        }
+        /* Card image hover zoom effect */
+        .card-img {
+        transition: transform 0.3s ease;
+        }
+        .card-img:hover {
+        transform: scale(1.05);
+        }
+        /* Carousel arrow buttons */
+        .carousel-arrow {
+        background-color: rgba(255, 255, 255, 0.7);
+        backdrop-filter: blur(5px);
+        box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+        transition: background-color 0.3s ease;
+        }
+        .carousel-arrow:hover {
+        background-color: rgba(255, 255, 255, 0.9);
+        }
+    
