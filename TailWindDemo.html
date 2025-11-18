@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -7,22 +8,27 @@
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="./utilities/tailwindStyles.css">
 </head>
+
 <body class="bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100">
 
- 
 
- 
+
+
   <div class="fixed top-4 right-4 z-50 flex items-center gap-3">
-    <button id="toggleTheme" class="px-3 py-2 rounded-md bg-white/90 dark:bg-gray-800/80 text-sm shadow">Toggle Theme</button>
+    <button id="toggleTheme" class="px-3 py-2 rounded-md bg-white/90 dark:bg-gray-800/80 text-sm shadow">Toggle
+      Theme</button>
   </div>
- <nav class="fixed top-0 left-0 w-full bg-white/70 dark:bg-gray-800/60 backdrop-blur-md shadow z-50 py-3 flex justify-end px-6">
-<button id="toggleTheme" class="px-3 py-2 rounded-md bg-gray-200 dark:bg-gray-700 text-sm font-medium shadow">
-Toggle Theme
-</button>
-</nav>
-  <header class="h-screen flex items-center justify-center bg-gradient-to-br from-indigo-600 to-rose-500 dark:from-gray-800 dark:to-gray-900">
+  <nav
+    class="fixed top-0 left-0 w-full bg-white/70 dark:bg-gray-800/60 backdrop-blur-md shadow z-50 py-3 flex justify-end px-6">
+    <button id="toggleTheme" class="px-3 py-2 rounded-md bg-gray-200 dark:bg-gray-700 text-sm font-medium shadow">
+      Toggle Theme
+    </button>
+  </nav>
+  <header
+    class="h-screen flex items-center justify-center bg-gradient-to-br from-indigo-600 to-rose-500 dark:from-gray-800 dark:to-gray-900">
     <div class="text-center px-6">
-      <h1 class="text-4xl md:text-6xl font-extrabold text-white drop-shadow-lg">Welcome — My Favorite Movies & Places</h1>
+      <h1 class="text-4xl md:text-6xl font-extrabold text-white drop-shadow-lg">Welcome — My Favorite Movies & Places
+      </h1>
       <p class="mt-4 text-lg text-white/90">Browse my top picks. Carousels auto-play — hover to pause.</p>
     </div>
   </header>
@@ -40,86 +46,119 @@ Toggle Theme
       </div>
 
       <div id="moviesCarousel" class="relative">
-        <div class="flex gap-6 overflow-x-auto no-scrollbar snap-x snap-mandatory py-2"
-             style="scroll-behavior:smooth;">
+        <div class="flex gap-6 overflow-x-auto no-scrollbar snap-x snap-mandatory py-2" style="scroll-behavior:smooth;">
           <!-- Card template: min-w tuned to show approx 4 on large screens -->
-          <article class="card min-w-[220px] md:min-w-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden snap-start">
-            <img class="w-full h-40 object-cover card-img" src="https://images.unsplash.com/photo-1502139214988-8d06f3a2e7ce?auto=format&fit=crop&w=800&q=80" alt="Inception poster">
+          <article
+            class="card min-w-[220px] md:min-w-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden snap-start">
+            <img class="w-full h-40 object-cover card-img"
+              src="https://images.unsplash.com/photo-1502139214988-8d06f3a2e7ce?auto=format&fit=crop&w=800&q=80"
+              alt="Inception poster">
             <div class="p-4 text-center">
               <h3 class="font-semibold text-lg">Inception</h3>
-              <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">A Nolan masterpiece about dreams within dreams.</p>
+              <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">A Nolan masterpiece about dreams within dreams.
+              </p>
             </div>
           </article>
 
-          <article class="card min-w-[220px] md:min-w-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden snap-start">
-            <img class="w-full h-40 object-cover card-img" src="https://images.unsplash.com/photo-1502209524169-acea936ff3a2?auto=format&fit=crop&w=800&q=80" alt="Interstellar poster">
+          <article
+            class="card min-w-[220px] md:min-w-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden snap-start">
+            <img class="w-full h-40 object-cover card-img"
+              src="https://images.unsplash.com/photo-1502209524169-acea936ff3a2?auto=format&fit=crop&w=800&q=80"
+              alt="Interstellar poster">
             <div class="p-4 text-center">
               <h3 class="font-semibold text-lg">Interstellar</h3>
-              <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Epic space drama exploring time, love and survival.</p>
+              <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Epic space drama exploring time, love and
+                survival.</p>
             </div>
           </article>
 
-          <article class="card min-w-[220px] md:min-w-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden snap-start">
-            <img class="w-full h-40 object-cover card-img" src="https://images.unsplash.com/photo-1563201519-2b8c9f7f6b02?auto=format&fit=crop&w=800&q=80" alt="Dark Knight poster">
+          <article
+            class="card min-w-[220px] md:min-w-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden snap-start">
+            <img class="w-full h-40 object-cover card-img"
+              src="https://images.unsplash.com/photo-1563201519-2b8c9f7f6b02?auto=format&fit=crop&w=800&q=80"
+              alt="Dark Knight poster">
             <div class="p-4 text-center">
               <h3 class="font-semibold text-lg">The Dark Knight</h3>
               <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">A gritty and brilliant superhero crime drama.</p>
             </div>
           </article>
 
-          <article class="card min-w-[220px] md:min-w-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden snap-start">
-            <img class="w-full h-40 object-cover card-img" src="https://images.unsplash.com/photo-1581905764498-2d7b1b4a0b7b?auto=format&fit=crop&w=800&q=80" alt="Avatar poster">
+          <article
+            class="card min-w-[220px] md:min-w-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden snap-start">
+            <img class="w-full h-40 object-cover card-img"
+              src="https://images.unsplash.com/photo-1581905764498-2d7b1b4a0b7b?auto=format&fit=crop&w=800&q=80"
+              alt="Avatar poster">
             <div class="p-4 text-center">
               <h3 class="font-semibold text-lg">Avatar</h3>
               <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">A spectacular visual journey on Pandora.</p>
             </div>
           </article>
 
-          <article class="card min-w-[220px] md:min-w-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden snap-start">
-            <img class="w-full h-40 object-cover card-img" src="https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?auto=format&fit=crop&w=800&q=80" alt="Titanic poster">
+          <article
+            class="card min-w-[220px] md:min-w-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden snap-start">
+            <img class="w-full h-40 object-cover card-img"
+              src="https://images.unsplash.com/photo-1517604931442-7e0c8ed2963c?auto=format&fit=crop&w=800&q=80"
+              alt="Titanic poster">
             <div class="p-4 text-center">
               <h3 class="font-semibold text-lg">Titanic</h3>
               <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">A timeless romantic epic on the doomed ship.</p>
             </div>
           </article>
 
-          <article class="card min-w-[220px] md:min-w-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden snap-start">
-            <img class="w-full h-40 object-cover card-img" src="https://images.unsplash.com/photo-1538701566285-8b57a7a3f3b5?auto=format&fit=crop&w=800&q=80" alt="Avengers Endgame poster">
+          <article
+            class="card min-w-[220px] md:min-w-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden snap-start">
+            <img class="w-full h-40 object-cover card-img"
+              src="https://images.unsplash.com/photo-1538701566285-8b57a7a3f3b5?auto=format&fit=crop&w=800&q=80"
+              alt="Avengers Endgame poster">
             <div class="p-4 text-center">
               <h3 class="font-semibold text-lg">Avengers: Endgame</h3>
               <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">The MCU's epic showdown and emotional finale.</p>
             </div>
           </article>
 
-          <article class="card min-w-[220px] md:min-w-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden snap-start">
-            <img class="w-full h-40 object-cover card-img" src="https://images.unsplash.com/photo-1542206395-9feb3edaa68b?auto=format&fit=crop&w=800&q=80" alt="Iron Man poster">
+          <article
+            class="card min-w-[220px] md:min-w-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden snap-start">
+            <img class="w-full h-40 object-cover card-img"
+              src="https://images.unsplash.com/photo-1542206395-9feb3edaa68b?auto=format&fit=crop&w=800&q=80"
+              alt="Iron Man poster">
             <div class="p-4 text-center">
               <h3 class="font-semibold text-lg">Iron Man</h3>
               <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">The film that launched the modern MCU.</p>
             </div>
           </article>
 
-          <article class="card min-w-[220px] md:min-w-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden snap-start">
-            <img class="w-full h-40 object-cover card-img" src="https://images.unsplash.com/photo-1524985069026-dd778a71c7b4?auto=format&fit=crop&w=800&q=80" alt="Matrix poster">
+          <article
+            class="card min-w-[220px] md:min-w-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden snap-start">
+            <img class="w-full h-40 object-cover card-img"
+              src="https://images.unsplash.com/photo-1524985069026-dd778a71c7b4?auto=format&fit=crop&w=800&q=80"
+              alt="Matrix poster">
             <div class="p-4 text-center">
               <h3 class="font-semibold text-lg">The Matrix</h3>
               <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">A mind-bending cyberpunk classic.</p>
             </div>
           </article>
 
-          <article class="card min-w-[220px] md:min-w-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden snap-start">
-            <img class="w-full h-40 object-cover card-img" src="https://images.unsplash.com/photo-1542206395-60db0b9b1d59?auto=format&fit=crop&w=800&q=80" alt="Joker poster">
+          <article
+            class="card min-w-[220px] md:min-w-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden snap-start">
+            <img class="w-full h-40 object-cover card-img"
+              src="https://images.unsplash.com/photo-1542206395-60db0b9b1d59?auto=format&fit=crop&w=800&q=80"
+              alt="Joker poster">
             <div class="p-4 text-center">
               <h3 class="font-semibold text-lg">Joker</h3>
-              <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">A haunting character study and award-winning performance.</p>
+              <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">A haunting character study and award-winning
+                performance.</p>
             </div>
           </article>
 
-          <article class="card min-w-[220px] md:min-w-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden snap-start">
-            <img class="w-full h-40 object-cover card-img" src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=800&q=80" alt="John Wick poster">
+          <article
+            class="card min-w-[220px] md:min-w-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden snap-start">
+            <img class="w-full h-40 object-cover card-img"
+              src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=800&q=80"
+              alt="John Wick poster">
             <div class="p-4 text-center">
               <h3 class="font-semibold text-lg">John Wick</h3>
-              <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Stylish action with revolutionary choreography.</p>
+              <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Stylish action with revolutionary choreography.
+              </p>
             </div>
           </article>
         </div>
@@ -132,109 +171,318 @@ Toggle Theme
 
 
     <section>
-  <div class="flex items-center justify-between mb-6">
-    <h2 class="text-2xl md:text-3xl font-bold text-center">📍 Favourite Places</h2>
-    <div class="flex gap-2">
-      <button class="place-prev carousel-arrow p-2 rounded-md" aria-label="Previous place">‹</button>
-      <button class="place-next carousel-arrow p-2 rounded-md" aria-label="Next place">›</button>
-    </div>
-  </div>
-
-  <div id="placesCarousel" class="relative">
-    <div class="flex gap-6 overflow-x-auto no-scrollbar snap-x snap-mandatory py-2">
-
-      <!-- CARD 1 -->
-      <article class="card min-w-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden snap-start">
-        <img class="w-full h-44 object-contain bg-white p-3 rounded-xl shadow-md transition-transform duration-300 hover:scale-105"
-             src="./utilities/tailwindImages/goa.jfif" alt="Goa">
-        <div class="p-4 text-center">
-          <h3 class="font-semibold text-lg">Goa</h3>
-          <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Sandy beaches, sunsets, seafood and relaxed coastal vibes.</p>
+      <div class="flex items-center justify-between mb-6">
+        <h2 class="text-2xl md:text-3xl font-bold text-center">📍 Favourite Places</h2>
+        <div class="flex gap-2">
+          <button class="place-prev carousel-arrow p-2 rounded-md" aria-label="Previous place">‹</button>
+          <button class="place-next carousel-arrow p-2 rounded-md" aria-label="Next place">›</button>
         </div>
-      </article>
+      </div>
 
-      <!-- CARD 2 -->
-      <article class="card min-w-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden snap-start">
-        <img class="w-full h-44 object-contain bg-white p-3 rounded-xl shadow-md transition-transform duration-300 hover:scale-105"
-             src="./utilities/tailwindImages/vijaywada.jfif" alt="Vijaywada">
-        <div class="p-4 text-center">
-          <h3 class="font-semibold text-lg">Vijaywada</h3>
-          <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Historic ghats, temples and scenic beauty.</p>
+      <div id="placesCarousel" class="relative">
+        <div class="flex gap-6 overflow-x-auto no-scrollbar snap-x snap-mandatory py-2">
+
+          <!-- CARD 1 -->
+          <article class="card min-w-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden snap-start">
+            <img
+              class="w-full h-44 object-contain bg-white p-3 rounded-xl shadow-md transition-transform duration-300 hover:scale-105"
+              src="./utilities/tailwindImages/goa.jfif" alt="Goa">
+            <div class="p-4 text-center">
+              <h3 class="font-semibold text-lg">Goa</h3>
+              <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Sandy beaches, sunsets, seafood and relaxed
+                coastal vibes.</p>
+            </div>
+          </article>
+
+          <!-- CARD 2 -->
+          <article class="card min-w-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden snap-start">
+            <img
+              class="w-full h-44 object-contain bg-white p-3 rounded-xl shadow-md transition-transform duration-300 hover:scale-105"
+              src="./utilities/tailwindImages/vijaywada.jfif" alt="Vijaywada">
+            <div class="p-4 text-center">
+              <h3 class="font-semibold text-lg">Vijaywada</h3>
+              <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Historic ghats, temples and scenic beauty.</p>
+            </div>
+          </article>
+
+          <!-- CARD 3 -->
+          <article class="card min-w-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden snap-start">
+            <img
+              class="w-full h-44 object-contain bg-white p-3 rounded-xl shadow-md transition-transform duration-300 hover:scale-105"
+              src="./utilities/tailwindImages/vikarabad.jfif" alt="Vikarabad">
+            <div class="p-4 text-center">
+              <h3 class="font-semibold text-lg">Vikarabad</h3>
+              <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Forests, lakes and peaceful scenic trails.</p>
+            </div>
+          </article>
+
+          <!-- CARD 4 -->
+          <article class="card min-w-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden snap-start">
+            <img
+              class="w-full h-44 object-contain bg-white p-3 rounded-xl shadow-md transition-transform duration-300 hover:scale-105"
+              src="./utilities/tailwindImages/pune.jfif" alt="Pune">
+            <div class="p-4 text-center">
+              <h3 class="font-semibold text-lg">Pune</h3>
+              <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Pleasant weather, hills and youthful culture.</p>
+            </div>
+          </article>
+
+          <!-- CARD 5 -->
+          <article class="card min-w-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden snap-start">
+            <img
+              class="w-full h-44 object-contain bg-white p-3 rounded-xl shadow-md transition-transform duration-300 hover:scale-105"
+              src="./utilities/tailwindImages/bhilai.jfif" alt="Bhilai">
+            <div class="p-4 text-center">
+              <h3 class="font-semibold text-lg">Bhilai</h3>
+              <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Peaceful city, greenery and modern vibe.</p>
+            </div>
+          </article>
+
+          <!-- CARD 6 -->
+          <article class="card min-w-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden snap-start">
+            <img
+              class="w-full h-44 object-contain bg-white p-3 rounded-xl shadow-md transition-transform duration-300 hover:scale-105"
+              src="./utilities/tailwindImages/nanded.jfif" alt="Nanded">
+            <div class="p-4 text-center">
+              <h3 class="font-semibold text-lg">Nanded</h3>
+              <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Historic temples, forts and cultural heritage.
+              </p>
+            </div>
+          </article>
+
+          <!-- CARD 7 -->
+          <article class="card min-w-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden snap-start">
+            <img
+              class="w-full h-44 object-contain bg-white p-3 rounded-xl shadow-md transition-transform duration-300 hover:scale-105"
+              src="./utilities/tailwindImages/aadiyogi.jfif" alt="Aadiyogi">
+            <div class="p-4 text-center">
+              <h3 class="font-semibold text-lg">Aadiyogi</h3>
+              <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Spiritual calmness and inspirational sculpture.
+              </p>
+            </div>
+          </article>
+
+          <!-- CARD 8 -->
+          <article class="card min-w-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden snap-start">
+            <img
+              class="w-full h-44 object-contain bg-white p-3 rounded-xl shadow-md transition-transform duration-300 hover:scale-105"
+              src="./utilities/tailwindImages/hyderabad.jfif" alt="Hyderabad">
+            <div class="p-4 text-center">
+              <h3 class="font-semibold text-lg">Hyderabad</h3>
+              <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Charminar, biryani and vibrant culture.</p>
+            </div>
+          </article>
+
         </div>
-      </article>
-
-      <!-- CARD 3 -->
-      <article class="card min-w-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden snap-start">
-        <img class="w-full h-44 object-contain bg-white p-3 rounded-xl shadow-md transition-transform duration-300 hover:scale-105"
-             src="./utilities/tailwindImages/vikarabad.jfif" alt="Vikarabad">
-        <div class="p-4 text-center">
-          <h3 class="font-semibold text-lg">Vikarabad</h3>
-          <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Forests, lakes and peaceful scenic trails.</p>
-        </div>
-      </article>
-
-      <!-- CARD 4 -->
-      <article class="card min-w-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden snap-start">
-        <img class="w-full h-44 object-contain bg-white p-3 rounded-xl shadow-md transition-transform duration-300 hover:scale-105"
-             src="./utilities/tailwindImages/pune.jfif" alt="Pune">
-        <div class="p-4 text-center">
-          <h3 class="font-semibold text-lg">Pune</h3>
-          <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Pleasant weather, hills and youthful culture.</p>
-        </div>
-      </article>
-
-      <!-- CARD 5 -->
-      <article class="card min-w-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden snap-start">
-        <img class="w-full h-44 object-contain bg-white p-3 rounded-xl shadow-md transition-transform duration-300 hover:scale-105"
-             src="./utilities/tailwindImages/bhilai.jfif" alt="Bhilai">
-        <div class="p-4 text-center">
-          <h3 class="font-semibold text-lg">Bhilai</h3>
-          <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Peaceful city, greenery and modern vibe.</p>
-        </div>
-      </article>
-
-      <!-- CARD 6 -->
-      <article class="card min-w-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden snap-start">
-        <img class="w-full h-44 object-contain bg-white p-3 rounded-xl shadow-md transition-transform duration-300 hover:scale-105"
-             src="./utilities/tailwindImages/nanded.jfif" alt="Nanded">
-        <div class="p-4 text-center">
-          <h3 class="font-semibold text-lg">Nanded</h3>
-          <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Historic temples, forts and cultural heritage.</p>
-        </div>
-      </article>
-
-      <!-- CARD 7 -->
-      <article class="card min-w-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden snap-start">
-        <img class="w-full h-44 object-contain bg-white p-3 rounded-xl shadow-md transition-transform duration-300 hover:scale-105"
-             src="./utilities/tailwindImages/aadiyogi.jfif" alt="Aadiyogi">
-        <div class="p-4 text-center">
-          <h3 class="font-semibold text-lg">Aadiyogi</h3>
-          <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Spiritual calmness and inspirational sculpture.</p>
-        </div>
-      </article>
-
-      <!-- CARD 8 -->
-      <article class="card min-w-[260px] bg-white dark:bg-gray-800 rounded-xl shadow-lg overflow-hidden snap-start">
-        <img class="w-full h-44 object-contain bg-white p-3 rounded-xl shadow-md transition-transform duration-300 hover:scale-105"
-             src="./utilities/tailwindImages/hyderabad.jfif" alt="Hyderabad">
-        <div class="p-4 text-center">
-          <h3 class="font-semibold text-lg">Hyderabad</h3>
-          <p class="mt-2 text-sm text-gray-600 dark:text-gray-300">Charminar, biryani and vibrant culture.</p>
-        </div>
-      </article>
-
-    </div>
-  </div>
-</section>
+      </div>
+    </section>
 
   </main>
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
+    <!-- Card 1: Banyan Tree -->
+    <div class="bg-white shadow rounded-lg overflow-hidden">
+        <div class="p-4">
+            <h3 class="text-xl font-bold mb-2">Banyan Tree</h3>
+            <p class="text-gray-600 text-sm">
+                The Banyan tree is known for its large canopy and aerial roots. 
+                It symbolizes strength and longevity in many cultures.
+            </p>
+        </div>
+    </div>
+    <!-- Card 2: Pine Tree -->
+    <div class="bg-white shadow rounded-lg overflow-hidden">
+        <div class="p-4">
+            <h3 class="text-xl font-bold mb-2">Pine Tree</h3>
+            <p class="text-gray-600 text-sm">
+                Pine trees are evergreen conifers known for their refreshing scent 
+                and needle-like leaves. Found in mountains and forests worldwide.
+            </p>
+        </div>
+    </div>
+    <!-- Card 3: Maple Tree -->
+    <div class="bg-white shadow rounded-lg overflow-hidden">
+        <div class="p-4">
+            <h3 class="text-xl font-bold mb-2">Maple Tree</h3>
+            <p class="text-gray-600 text-sm">
+                The Maple tree is famous for its vibrant autumn colors and sweet maple syrup. 
+                A symbol of beauty and balance.
+            </p>
+        </div>
+    </div>
+</div>
+
+<h1 class="text-center text-2xl font-bold">Largest Oceans</h1>
+<!-- Table Records -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6">
+  <!-- Pacific Ocean -->
+  <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+    
+      <div class="p-4">
+          <h2 class="text-2xl font-bold mb-2">Pacific Ocean</h2>
+          <p class="text-gray-600 text-sm mb-2">
+              The Pacific Ocean is the largest and deepest ocean on Earth, 
+              covering more than 63 million square miles.
+          </p>
+          <ul class="text-gray-700 text-sm">
+              <li><strong>Area:</strong> 63,800,000 sq mi</li>
+              <li><strong>Deepest Point:</strong> Mariana Trench (36,070 ft)</li>
+              <li><strong>Location:</strong> Between Asia, Australia & the Americas</li>
+          </ul>
+      </div>
+  </div>
+
+  <!-- Atlantic Ocean -->
+  <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+     
+      <div class="p-4">
+          <h2 class="text-2xl font-bold mb-2">Atlantic Ocean</h2>
+          <p class="text-gray-600 text-sm mb-2">
+              The Atlantic Ocean is the second-largest ocean, known for its 
+              S-shaped basin and the historical importance of its trade routes.
+          </p>
+          <ul class="text-gray-700 text-sm">
+              <li><strong>Area:</strong> 41,100,000 sq mi</li>
+              <li><strong>Deepest Point:</strong> Puerto Rico Trench (27,493 ft)</li>
+              <li><strong>Location:</strong> Between the Americas, Europe & Africa</li>
+          </ul>
+      </div>
+  </div>
+
+  <!-- Indian Ocean -->
+  <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+    
+      <div class="p-4">
+          <h2 class="text-2xl font-bold mb-2">Indian Ocean</h2>
+          <p class="text-gray-600 text-sm mb-2">
+              The Indian Ocean is the third-largest ocean, bounded by Asia, Africa, 
+              and Australia. It is the warmest ocean on Earth.
+          </p>
+          <ul class="text-gray-700 text-sm">
+              <li><strong>Area:</strong> 27,240,000 sq mi</li>
+              <li><strong>Deepest Point:</strong> Java Trench (25,344 ft)</li>
+              <li><strong>Location:</strong> Between Africa, Asia & Australia</li>
+          </ul>
+      </div>
+  </div>
+
+
+</div>
+<span class="text-2xl font-bold">Largest Islands</span>
+<div class="p-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+  <!-- Home Reef Island Card -->
+  <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+    <div class="p-4">
+      <h3 class="text-2xl font-bold mb-2">Home Reef Island (Tonga)</h3>
+      <p class="text-sm text-gray-600 mb-4">A volcanic island that emerged due to an underwater eruption.</p>
+      <div class="text-sm flex justify-between mb-1">
+        <span>Size: 15.9 ha</span>
+        <span>Area Growth: ~3.7 ha</span>
+      </div>
+      <!-- Bar Graph -->
+      <div class="w-full bg-gray-200 h-4 rounded">
+        <div class="bg-blue-500 h-4 rounded" style="width: calc( (15.9 / 16) * 100% )"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Unnamed Japan Island Card -->
+  <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+
+    <div class="p-4">
+      <h3 class="text-2xl font-bold mb-2">Unnamed Japan Island</h3>
+      <p class="text-sm text-gray-600 mb-4">A new volcanic island formed off the coast of Iwoto.</p>
+      
+      <div class="text-sm flex justify-between mb-1">
+        <span>Size: ~0.785 ha</span>
+        <span>Area: ~100 m diameter</span>
+      </div>
+      
+      <!-- Bar Graph -->
+      <div class="w-full bg-gray-200 h-4 rounded">
+        <div class="bg-green-500 h-4 rounded" style="width: calc( (0.785 / 16) * 100% )"></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Third Island Card (Placeholder for any future islands) -->
+  <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+   
+    <div class="p-4">
+      <h3 class="text-2xl font-bold mb-2">Future Island</h3>
+      <p class="text-sm text-gray-600 mb-4">A placeholder for new islands formed by natural phenomena.</p>
+      
+      <div class="text-sm flex justify-between mb-1">
+        <span>Size: TBD</span>
+        <span>Growth: TBD</span>
+      </div>
+      
+      <!-- Bar Graph -->
+      <div class="w-full bg-gray-200 h-4 rounded">
+        <div class="bg-gray-500 h-4 rounded"></div> <!-- Empty placeholder bar -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="p-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+  <!-- UY Scuti Card -->
+  <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+    <div class="w-full h-48 flex justify-center">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a6/UY_Scuti_%28artist%27s_impression%29.jpg/320px-UY_Scuti_%28artist%27s_impression%29.jpg" alt="UY Scuti Star" class="object-contain w-full h-auto">
+    </div>
+    <div class="p-4">
+      <h3 class="text-2xl font-bold mb-2">UY Scuti</h3>
+      <p class="text-sm text-gray-600 mb-4">
+        UY Scuti is the largest known star by radius and volume. It is a red supergiant located in the constellation Scutum.  
+        It is about 1,700 times the radius of our Sun, and approximately 9,500 light-years away. Despite its enormous size, it has a short lifespan.  
+       
+      </p>
+    </div>
+  </div>
+
+  <!-- VY Canis Majoris Card -->
+  <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+    <div class="w-full h-48 flex justify-center">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1b/VY_Canis_Majoris_-_NASA.jpg/320px-VY_Canis_Majoris_-_NASA.jpg" alt="VY Canis Majoris Star" class="object-contain w-full h-auto">
+    </div>
+    <div class="p-4">
+      <h3 class="text-2xl font-bold mb-2">VY Canis Majoris</h3>
+      <p class="text-sm text-gray-600 mb-4">
+        VY Canis Majoris is a red supergiant in the constellation Canis Major. It is about 1,420 times the radius of the Sun.  
+        Located 3,900 light-years away, it shines incredibly bright, though it is not always visible without a telescope.  
+         </p>
+    </div>
+  </div>
+
+  <!-- Betelgeuse Card -->
+  <div class="bg-white shadow-lg rounded-lg overflow-hidden">
+    <div class="w-full h-48 flex justify-center">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Betelgeuse_2019.png/320px-Betelgeuse_2019.png" alt="Betelgeuse Star" class="object-contain w-full h-auto">
+    </div>
+    <div class="p-4">
+      <h3 class="text-2xl font-bold mb-2">Betelgeuse</h3>
+      <p class="text-sm text-gray-600 mb-4">
+        Betelgeuse is a red supergiant in the constellation Orion. It is about 1,000 times the size of our Sun and located 642 light-years away.  
+        The star has a reddish hue due to its low surface temperature. 
+       </p>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
   <!-- FOOTER -->
-<footer class="w-full bg-gray-800 text-white text-center py-6 mt-16">
-<p class="text-lg">&copy; 2025 My Portfolio. All Rights Reserved.</p>
-</footer>
+  <footer class="w-full bg-gray-800 text-white text-center py-6 mt-16">
+    <p class="text-lg">&copy; 2025 My Portfolio. All Rights Reserved.</p>
+  </footer>
 
 
   <!-- SMALL JS: carousels auto-scroll + controls + theme toggle -->
- <script src="./utilities/tailwindScript.js"></script>
+  <script src="./utilities/tailwindScript.js"></script>
 </body>
+
 </html>
